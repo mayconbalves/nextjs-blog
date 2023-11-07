@@ -1,3 +1,5 @@
+import Head from 'next/head';
+
 import axios from 'axios';
 import { useState } from 'react';
 
@@ -27,6 +29,9 @@ export default function HomePage() {
 
   return (
       <>
+        <Head>
+          <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests" />
+        </Head>
         <h1>Consulte um CPF:</h1>
         <form>
           <label>CPF </label>
